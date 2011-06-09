@@ -57,3 +57,4 @@ It was written by Michael Tokarev, and its terms of usage are:
 Bugs? Sure, how many do you want? I can think of these:
 
 * No loop detection. (Don't add a URL that points to `yaus`...)
+* Target URLs with a plus (`+`) in them are chomped at the plus. That's a feature.
