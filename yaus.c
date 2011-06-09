@@ -6,6 +6,20 @@
 #include <fcntl.h>
 #include <cdb.h>
 
+/*
+ * yaus - Yet Another URL Shortner (C)June 2011 by Jan-Piet Mens <jpmens@gmail.com>
+ *
+ *  _   _  __ _ _   _ ___ 
+ * | | | |/ _` | | | / __|
+ * | |_| | (_| | |_| \__ \
+ *  \__, |\__,_|\__,_|___/
+ *  |___/                 
+ *
+ *
+ * This is a CGI program. Memory leaks don't matter, because we have
+ * a short life.
+ */
+
 #define DB	"data.cdb"
 
 static char *lookup(struct cdb *cdb, char *);
